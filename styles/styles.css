@@ -14,7 +14,15 @@ article, aside, footer, header, nav, section {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0;
+}
+
+h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
 }
 
 figcaption, figure, main {
@@ -257,8 +265,8 @@ html {
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  -webkit-animation-duration: 7.5s;
-          animation-duration: 7.5s;
+  -webkit-animation-duration: 6.5s;
+          animation-duration: 6.5s;
   -webkit-animation-timing-function: steps(31, end);
           animation-timing-function: steps(31, end);
   -webkit-animation-iteration-count: infinite;
@@ -387,8 +395,44 @@ html {
   font-size: 62.5%;
 }
 
-.main-nav {
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+.mainNav.hidden {
   display: none;
+}
+
+.mainNav.visible {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  background-color: white;
+}
+
+.mainNav.visible ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  width: 50%;
+  height: inherit;
+  margin: 0;
+}
+
+.mainNav.visible li {
+  padding: 10px 0;
+}
+
+.mainNav.visible a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -420,4 +464,59 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .image-container {
+  width: 37%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.about .text-content {
+  width: 37%;
+  margin-left: 40px;
+}
+
+.about p {
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.text-content p:first-child,
+.text-content p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: center;
 }

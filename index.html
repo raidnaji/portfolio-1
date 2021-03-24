@@ -6,14 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="#" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./styles/styles.css" />
         <title>Portfolio - Anton Montrezor</title>
     </head>
     <body>
-        <header>
+        <header id="home">
              <div id="particlesJS" class="particles"></div>
                 <div class="wrapper">
                     <h1>
@@ -21,19 +19,47 @@
                         <span class="text2">I'm a Front-Web Developer!</span>
                         <span class="text3">Welcome to my portfolio!</span>
                     </h1>
-                    <nav class="main-nav">
+                    <nav class="mainNav hidden">
                         <ul>
-                            <li>Home</li>
-                            <li>About Me</li>
-                            <li>Skills</li>
-                            <li>Projects</li>
-                            <li>Contact Me</li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
         </header>
-
+        <main>
+            <section class="about" id="about">
+                <div class="wrapper">
+                    <h2>About Me</h2>
+                    <div class="container">
+                        <div class="image-container">
+                            <img src="./assests/personalPhoto.jpg" alt="">
+                        </div>
+                        <div class="text-content">
+                            <p>
+                                I am a Front-End Web Developer. I create responsive and accessible web applications and am focused on delivering modern solutions to complex web designs with up-to-date skills in HTML5, CSS3, JavaScript (ES6+), and other front-end tools.
+                            </p>
+                            <p>
+                                I consider myself as a person who works effectively with people and cooperate with others through building positive relationships, providing support, and contributing to a positive team spirit. I highly value cooperation, committing to team goals, and sharing new ideas in every project I join. 
+                            </p>
+                            <p>
+                                My technical abilities are backed up by my past IT experience in examining issues from multiple viewpoints and analyzing information to answer complex problems. I constantly develop my skills to offer the best technologies used in Web Development.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="wrapper">
+                    <h2>Skills</h2>
+                </div>
+            </section>
+        </main>
         <script src="./particles.js"></script>
         <script src="./app.js"></script>
+        <script src="./scripts.js"></script>
     </body>
 </html>

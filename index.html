@@ -8,27 +8,57 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./styles/styles.css" />
+        <script src="https://kit.fontawesome.com/ea3b5e355b.js" crossorigin="anonymous"></script>
         <title>Portfolio - Anton Montrezor</title>
     </head>
     <body>
         <header id="home">
-             <div id="particlesJS" class="particles"></div>
-                <div class="wrapper">
-                    <h1>
-                        <span class="text1">Hi! I'm Anton!</span>
-                        <span class="text2">I'm a Front-Web Developer!</span>
-                        <span class="text3">Welcome to my portfolio!</span>
-                    </h1>
-                    <nav class="mainNav hidden">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
+            <div id="particlesJS" class="particles"></div>
+            <div class="wrapper">
+                <h1>
+                    <span class="text1">Hi! I'm Anton!</span>
+                    <span class="text2">I'm a Front-Web Developer!</span>
+                    <span class="text3">Welcome to my portfolio!</span>
+                </h1>
+                <nav class="mainNav hidden">
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                <span class="srOnly">Home</span>
+                                <i class="fas fa-rocket"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <span class="srOnly">About</span>
+                                <i class="fas fa-user-astronaut"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills">
+                                <span class="srOnly">Skills</span>
+                                <i class="fas fa-meteor"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                <span class="srOnly">Projects</span>
+                                <i class="fas fa-laptop-code"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span class="srOnly">Contacts</span>
+                                <i class="fas fa-broadcast-tower"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="caretSquare">
+                    <span class="srOnly">Click to see information about me below!</span>
+                    <a href="#about"><i class="far fa-caret-square-down" aria-hidden="true"></i></a>
                 </div>
+            </div>
         </header>
         <main>
             <section class="about" id="about">
@@ -55,6 +85,78 @@
             <section class="skills">
                 <div class="wrapper">
                     <h2>Skills</h2>
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <span class="srOnly">HTML5</span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                            <li>
+                                <span class="srOnly"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="wrapper">
+                    <h2>Projects</h2>
+                    <ul class="container">
+                        <li>
+                            <div class="imageContainer">
+                                <img src="./assests/haikusHighway.png" alt="">
+                            </div>
+                            <div class="textContent">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                                <p>Technologies used</p>
+                                <p>Links</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageContainer">
+                            </div>
+                            <div class="textContent">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                                <p>Technologies used</p>
+                                <p>Links</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageContainer">
+                            </div>
+                            <div class="textContent">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                                <p>Technologies used</p>
+                                <p>Links</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>

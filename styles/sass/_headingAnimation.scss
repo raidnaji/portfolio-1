@@ -1,0 +1,91 @@
+// special shout-out to Valentyn Vasylenko for the inspiration of such a solution
+.text1 {
+    animation: text1;
+}
+
+.text2 {
+    animation: text2;
+}
+
+.text3 {
+    animation: text3;
+}
+
+.text1,
+.text2,
+.text3 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 7.5s;
+    animation-timing-function: steps(31, end);
+    animation-iteration-count: infinite;
+}
+
+.text1::after,
+.text2::after,
+.text3::after {
+    content: '_';
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes text1 {
+    0%,
+    30%,
+    100% {
+        width: 0;
+    }
+
+    2.5%,
+    27.5% {
+        width: 8.9em;
+    }
+}
+
+@keyframes text2 {
+    0%,
+    30%,
+    65%,
+    100% {
+        width: 0;
+    }
+
+    32.5%,
+    62.5% {
+        width: 16.1em;
+    }
+}
+
+@keyframes text3 {
+    0%,
+    65%,
+    100% {
+        width: 0;
+    }
+
+    67.5%,
+    97.5% {
+        width: 14.9em;
+    }
+}
+
+@keyframes caret {
+    from,
+    to {
+        color: transparent;
+    }
+
+    5%, 
+    25%,
+    35%,
+    60%,
+    70%,
+    95% {
+        color: white;
+    }
+}

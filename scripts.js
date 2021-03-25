@@ -2,7 +2,6 @@ const app = {};
 
 app.displayNav = () => {
     const navigationMenu = document.querySelector('nav');
-    console.log(navigationMenu)
 
         if (window.pageYOffset > window.innerHeight) {
             navigationMenu.classList.add('visible');

@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    background-color: #0a0a0a; 
+    background-color: $primary; 
     position: relative;
 }
 
@@ -37,7 +37,7 @@ header .wrapper {
         width: 50%;
         height: inherit;
         width: 100%;
-        background-color: black;
+        background-color: $primary;
     }
 
     li {

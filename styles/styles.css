@@ -490,7 +490,7 @@ header .wrapper {
   width: 50%;
   height: inherit;
   width: 100%;
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 .visible li {
@@ -627,7 +627,7 @@ header .wrapper {
   margin: 0 auto;
 }
 
-.container li {
+.container > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,14 +639,14 @@ header .wrapper {
 }
 
 .projects .imageContainer {
-  width: 50%;
-  border: 10px solid black;
+  width: calc(50% - 15px);
+  border: 3px solid #0a0a0a;
   border-radius: 20px;
-  padding: 10px;
+  padding: 3px;
 }
 
 .projects .imageContainer img {
-  border-radius: 10px;
+  border-radius: 17px;
 }
 
 .imageContainer:hover {
@@ -655,7 +655,7 @@ header .wrapper {
 }
 
 .projects .textContent {
-  width: 40%;
+  width: calc(50% - 15px);
   margin-left: 30px;
 }
 
@@ -674,16 +674,16 @@ header .wrapper {
 }
 
 .secondaryNav a {
-  color: black;
+  color: #0a0a0a;
   font-weight: 700;
   padding: 10px 40px;
-  border: 2px solid black;
+  border: 2px solid #0a0a0a;
   border-radius: 5px;
 }
 
 .secondaryNav a:hover {
   color: white;
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 footer {
@@ -699,18 +699,26 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .contacts .textContent {
-  width: 50%;
+  width: calc(50% - 15px);
+  margin-left: 30px;
 }
 
 .contacts .formContainer {
-  width: 50%;
+  width: calc(50% - 15px);
 }
 
 .contacts form {
-  border: 10px solid black;
+  border: 5px solid #0a0a0a;
   border-radius: 20px;
 }
 
@@ -721,16 +729,17 @@ footer {
 
 .contacts form input {
   margin-top: 30px;
-  padding: 10px 0;
+  padding: 10px 10px;
   width: 40%;
-  border: 3px solid black;
+  border: 3px solid #0a0a0a;
   border-radius: 5px;
 }
 
 .contacts form textarea {
   margin-top: 30px;
+  padding: 10px 10px;
   width: 80%;
-  border: 3px solid black;
+  border: 3px solid #0a0a0a;
   border-radius: 5px;
   resize: none;
 }
@@ -739,12 +748,87 @@ footer {
   margin: 30px 0;
   width: 80%;
   padding: 10px 0;
-  border: 3px solid black;
+  border: 3px solid #0a0a0a;
   border-radius: 5px;
   background-color: transparent;
 }
 
-.contacts form button:hover {
-  background-color: black;
+.contacts form ::-webkit-input-placeholder {
+  color: #0a0a0a;
+  opacity: 1;
+}
+
+.contacts form :-ms-input-placeholder {
+  color: #0a0a0a;
+  opacity: 1;
+}
+
+.contacts form ::-ms-input-placeholder {
+  color: #0a0a0a;
+  opacity: 1;
+}
+
+.contacts form ::placeholder {
+  color: #0a0a0a;
+  opacity: 1;
+}
+
+.contacts form input:hover,
+.contacts form input:focus,
+.contacts form input:hover::-webkit-input-placeholder,
+.contacts form input:focus::-webkit-input-placeholder,
+.contacts form textarea:hover,
+.contacts form textarea:focus,
+.contacts form textarea:hover::-webkit-input-placeholder,
+.contacts form textarea:focus::-webkit-input-placeholder,
+.contacts form button:hover,
+.contacts form button:focus {
+  background-color: #0a0a0a;
   color: white;
+  outline: none;
+}
+
+.contacts form input:hover,
+.contacts form input:focus,
+.contacts form input:hover:-ms-input-placeholder,
+.contacts form input:focus:-ms-input-placeholder,
+.contacts form textarea:hover,
+.contacts form textarea:focus,
+.contacts form textarea:hover:-ms-input-placeholder,
+.contacts form textarea:focus:-ms-input-placeholder,
+.contacts form button:hover,
+.contacts form button:focus {
+  background-color: #0a0a0a;
+  color: white;
+  outline: none;
+}
+
+.contacts form input:hover,
+.contacts form input:focus,
+.contacts form input:hover::-ms-input-placeholder,
+.contacts form input:focus::-ms-input-placeholder,
+.contacts form textarea:hover,
+.contacts form textarea:focus,
+.contacts form textarea:hover::-ms-input-placeholder,
+.contacts form textarea:focus::-ms-input-placeholder,
+.contacts form button:hover,
+.contacts form button:focus {
+  background-color: #0a0a0a;
+  color: white;
+  outline: none;
+}
+
+.contacts form input:hover,
+.contacts form input:focus,
+.contacts form input:hover::placeholder,
+.contacts form input:focus::placeholder,
+.contacts form textarea:hover,
+.contacts form textarea:focus,
+.contacts form textarea:hover::placeholder,
+.contacts form textarea:focus::placeholder,
+.contacts form button:hover,
+.contacts form button:focus {
+  background-color: #0a0a0a;
+  color: white;
+  outline: none;
 }

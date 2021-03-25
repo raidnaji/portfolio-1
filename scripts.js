@@ -5,8 +5,8 @@ app.displayNav = () => {
     console.log(navigationMenu)
 
         if (window.pageYOffset > window.innerHeight) {
-        navigationMenu.classList.add('visible');
-        navigationMenu.classList.remove('hidden');
+            navigationMenu.classList.add('visible');
+            navigationMenu.classList.remove('hidden');
         } else {
             navigationMenu.classList.add('hidden');
             navigationMenu.classList.remove('visible');

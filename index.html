@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="#" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="./styles/styles.css" />
         <script src="https://kit.fontawesome.com/ea3b5e355b.js" crossorigin="anonymous"></script>
         <title>Portfolio - Anton Montrezor</title>
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact">
+                            <a href="#contacts">
                                 <span class="srOnly">Contacts</span>
                                 <i class="fas fa-broadcast-tower"></i>
                             </a>
@@ -66,7 +66,7 @@
                     <h2>About Me</h2>
                     <div class="container">
                         <div class="image-container">
-                            <img src="./assests/personalPhoto.jpg" alt="">
+                            <img src="./assests/personalPhoto.jpeg" alt="">
                         </div>
                         <div class="text-content">
                             <p>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="wrapper">
                     <h2>Skills</h2>
                     <div class="container">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="wrapper">
                     <h2>Projects</h2>
                     <ul class="container">
@@ -130,36 +130,87 @@
                                 <img src="./assests/haikusHighway.png" alt="">
                             </div>
                             <div class="textContent">
-                                <h3>Title</h3>
+                                <h3>Haikus Highway</h3>
                                 <p>Description</p>
                                 <p>Technologies used</p>
-                                <p>Links</p>
+                                <ul class="secondaryNav">
+                                    <li>
+                                        <a href="https://haikushighway.netlify.app/" target="blank">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/teamAwesomenessest/haikusHighway" target="blank">GitHub</a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li>
                             <div class="imageContainer">
+                                <img src="./assests/footballApp.png" alt="">
+                            </div>
+                            <div class="textContent">
+                                <h3>Football | Soccer Statistics App</h3>
+                                <p>Description</p>
+                                <p>Technologies used</p>
+                                <ul class="secondaryNav">
+                                    <li>
+                                        <a href="https://soccer-statistics.netlify.app/" target="blank">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/antonmontrezor/AntonMontrezorProject3" target="blank">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageContainer">
+                                <img src="./assests/weatherApp.png" alt="">
                             </div>
                             <div class="textContent">
                                 <h3>Title</h3>
                                 <p>Description</p>
                                 <p>Technologies used</p>
-                                <p>Links</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="imageContainer">
-                            </div>
-                            <div class="textContent">
-                                <h3>Title</h3>
-                                <p>Description</p>
-                                <p>Technologies used</p>
-                                <p>Links</p>
+                                <ul class="secondaryNav">
+                                    <li>
+                                        <a href="https://friendly-weather-app.netlify.app/" target="blank">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Nihal-and-Anton/friendly-weather-app" target="blank">GitHub</a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
+        <footer>
+            <section class="contacts" id="contacts">
+                <div class="wrapper">
+                    <h2>Contacts</h2>
+                    <div class="container">
+                        <div class="textContent">
+                            <p>Let's chat about everything! If you don't like forms, write me on my <a href="mailto:montrezornaton991@gmail.com">email</a>!</p>
+                        </div>
+                        <div class="formContainer">
+                            <form action="">
+                                <fieldset class="userInformation">
+                                    <legend class="srOnly">Type your name and email</legend>
+        
+                                    <label for="userName" class="srOnly">Type your name</label>
+                                    <input type="text" id="userName">
+                                    
+                                    <label for="userEmail" class="srOnly">Type your email</label>
+                                    <input type="email" id="userEmail">
+                                </fieldset>
+                                <label for="message"></label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <button type="submit">Message Me</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
         <script src="./particles.js"></script>
         <script src="./app.js"></script>
         <script src="./scripts.js"></script>

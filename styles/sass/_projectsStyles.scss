@@ -75,9 +75,9 @@
         text-transform: uppercase;
     }
 
-    a:hover {
-        color: white;
-        background-color: $primary;
+    a:hover,
+    a:focus {
+        color: $interactive;
     }
 
     span {

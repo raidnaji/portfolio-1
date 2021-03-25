@@ -43,6 +43,12 @@ a {
     text-decoration: none;
 }
 
+a:hover,
+a:focus {
+    outline: none;
+}
+
+
 ul {
     list-style: none;
 }

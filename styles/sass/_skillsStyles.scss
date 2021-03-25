@@ -1,3 +1,31 @@
 .skills {
+    padding-top: 90px;
+    padding-bottom: 150px;
     text-align: center;
+    color: $secondary;
+    background-color: $primary;
+}
+
+.skills ul {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    li {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        color: $secondary;
+    }
+
+    img {
+        width: 50px;
+        height: 60px;
+        color: black;
+    }
+
+    i {
+        font-size: 6rem;
+    }
 }

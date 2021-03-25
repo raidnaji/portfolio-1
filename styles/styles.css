@@ -436,6 +436,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  outline: none;
+}
+
 ul {
   list-style: none;
 }
@@ -626,7 +631,43 @@ header .wrapper {
 }
 
 .skills {
+  padding-top: 90px;
+  padding-bottom: 150px;
   text-align: center;
+  color: #ffffff;
+  background-color: #0a0a0a;
+}
+
+.skills ul {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills ul li {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.skills ul img {
+  width: 50px;
+  height: 60px;
+  color: black;
+}
+
+.skills ul i {
+  font-size: 6rem;
 }
 
 .projects {
@@ -716,9 +757,9 @@ header .wrapper {
   text-transform: uppercase;
 }
 
-.secondaryNav a:hover {
-  color: white;
-  background-color: #0a0a0a;
+.secondaryNav a:hover,
+.secondaryNav a:focus {
+  color: #ffa500;
 }
 
 .secondaryNav span {
@@ -737,8 +778,8 @@ footer {
 }
 
 .contacts > p {
-  margin-top: 20px;
-  padding: 30px 0;
+  margin-top: 75px;
+  padding: 0 0 15px 0;
   font-size: 1.6rem;
 }
 
@@ -751,73 +792,117 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .contacts .textContent {
-  width: calc(50% - 15px);
-  margin-left: 30px;
+  width: calc(25% - 15px);
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  position: relative;
 }
 
-.contacts .formContainer {
-  width: calc(50% - 15px);
+.contacts .textContent p {
+  width: 100%;
+}
+
+.contacts .textContent .socialMedia {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 5px;
+}
+
+.contacts .textContent a:hover i,
+.contacts .textContent a:focus i {
+  color: #ffa500;
+}
+
+.contacts .textContent i {
+  color: #ffffff;
+  font-size: 3rem;
 }
 
 .contacts form {
+  width: calc(45% - 15px);
   border-radius: 20px;
 }
 
 .contacts form fieldset {
   border: none;
+  margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacts form input {
-  margin-top: 30px;
   padding: 10px 10px;
-  width: 40%;
-  border: 3px solid #0a0a0a;
+  width: calc(45% - 2.5px);
   border-radius: 5px;
+  font-size: 1.8rem;
+  border: none;
+  overflow: hidden;
+}
+
+.contacts form input:first-of-type {
+  margin-right: 5px;
 }
 
 .contacts form textarea {
-  margin-top: 30px;
+  margin-top: 5px;
+  height: 150px;
   padding: 10px 10px;
-  width: 80%;
-  border: 3px solid #0a0a0a;
+  width: 90%;
   border-radius: 5px;
   resize: none;
+  border: none;
+  font-size: 1.8rem;
+  overflow: hidden;
 }
 
 .contacts form button {
-  margin: 30px 0;
-  width: 80%;
+  margin: 5px 0;
+  width: 90%;
   padding: 10px 0;
-  border: 3px solid #0a0a0a;
   border-radius: 5px;
+  border: none;
   background-color: #ffffff;
 }
 
 .contacts form ::-webkit-input-placeholder {
   color: #0a0a0a;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contacts form :-ms-input-placeholder {
   color: #0a0a0a;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contacts form ::-ms-input-placeholder {
   color: #0a0a0a;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contacts form ::placeholder {
   color: #0a0a0a;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contacts form input:hover,
@@ -827,11 +912,11 @@ footer {
 .contacts form textarea:hover,
 .contacts form textarea:focus,
 .contacts form textarea:hover::-webkit-input-placeholder,
-.contacts form textarea:focus::-webkit-input-placeholder,
-.contacts form button:hover,
-.contacts form button:focus {
-  background-color: #0a0a0a;
-  color: white;
+.contacts form textarea:focus::-webkit-input-placeholder {
+  background-color: #dad6d6;
+  border-radius: 5px;
+  color: #0a0a0a;
+  opacity: 1;
   outline: none;
 }
 
@@ -842,11 +927,11 @@ footer {
 .contacts form textarea:hover,
 .contacts form textarea:focus,
 .contacts form textarea:hover:-ms-input-placeholder,
-.contacts form textarea:focus:-ms-input-placeholder,
-.contacts form button:hover,
-.contacts form button:focus {
-  background-color: #0a0a0a;
-  color: white;
+.contacts form textarea:focus:-ms-input-placeholder {
+  background-color: #dad6d6;
+  border-radius: 5px;
+  color: #0a0a0a;
+  opacity: 1;
   outline: none;
 }
 
@@ -857,11 +942,11 @@ footer {
 .contacts form textarea:hover,
 .contacts form textarea:focus,
 .contacts form textarea:hover::-ms-input-placeholder,
-.contacts form textarea:focus::-ms-input-placeholder,
-.contacts form button:hover,
-.contacts form button:focus {
-  background-color: #0a0a0a;
-  color: white;
+.contacts form textarea:focus::-ms-input-placeholder {
+  background-color: #dad6d6;
+  border-radius: 5px;
+  color: #0a0a0a;
+  opacity: 1;
   outline: none;
 }
 
@@ -872,10 +957,16 @@ footer {
 .contacts form textarea:hover,
 .contacts form textarea:focus,
 .contacts form textarea:hover::placeholder,
-.contacts form textarea:focus::placeholder,
+.contacts form textarea:focus::placeholder {
+  background-color: #dad6d6;
+  border-radius: 5px;
+  color: #0a0a0a;
+  opacity: 1;
+  outline: none;
+}
+
 .contacts form button:hover,
 .contacts form button:focus {
-  background-color: #0a0a0a;
-  color: white;
-  outline: none;
+  background-color: #ffa500;
+  cursor: pointer;
 }

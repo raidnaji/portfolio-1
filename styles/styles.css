@@ -401,7 +401,7 @@ body {
 }
 
 main {
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 h1 {
@@ -414,8 +414,16 @@ h1 {
 h2 {
   font-size: 4rem;
   font-family: 'Roboto Mono', monospace;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
   display: inline-block;
+  padding: 0 5px;
+  border-bottom: 4px solid orange;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -432,9 +440,8 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100%;
-  display: block;
+p {
+  line-height: 1.5;
 }
 
 header {
@@ -471,7 +478,7 @@ header .wrapper {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 10%;
+  width: 8%;
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
 }
@@ -490,7 +497,7 @@ header .wrapper {
   width: 50%;
   height: inherit;
   width: 100%;
-  background-color: #0a0a0a;
+  background-color: orange;
 }
 
 .visible li {
@@ -506,12 +513,21 @@ header .wrapper {
 
 .visible a {
   padding: 10px 0;
-  color: inherit;
+}
+
+.visible a:hover i,
+.visible a:focus i {
+  color: orange;
+}
+
+.visible a:hover,
+.visible a:focus {
+  outline: none;
 }
 
 .visible i {
   font-size: 4.5rem;
-  color: white;
+  color: #0a0a0a;
 }
 
 @-webkit-keyframes fadeIn {
@@ -572,7 +588,7 @@ header .wrapper {
 }
 
 .about {
-  padding: 100px 0;
+  padding: 75px 0;
   text-align: center;
 }
 
@@ -614,7 +630,10 @@ header .wrapper {
 }
 
 .projects {
+  padding-top: 75px;
   text-align: center;
+  color: #ffffff;
+  background-color: #0a0a0a;
 }
 
 .container {
@@ -635,18 +654,20 @@ header .wrapper {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
 .projects .imageContainer {
-  width: calc(50% - 15px);
-  border: 3px solid #0a0a0a;
+  width: calc(45% - 15px);
   border-radius: 20px;
-  padding: 3px;
 }
 
 .projects .imageContainer img {
   border-radius: 17px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 28vw;
+  height: 20vw;
 }
 
 .imageContainer:hover {
@@ -655,30 +676,44 @@ header .wrapper {
 }
 
 .projects .textContent {
-  width: calc(50% - 15px);
+  width: calc(40% - 15px);
   margin-left: 30px;
+  text-align: left;
+  position: relative;
+}
+
+.projects .textContent h3 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.projects .textContent p {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.projects .textContent .technologies {
+  margin-bottom: 30px;
+}
+
+.projects .textContent .technologies .decor {
+  margin: 0 5px;
 }
 
 .secondaryNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-}
-
-.secondaryNav li {
-  width: 45%;
+  position: absolute;
+  bottom: 5px;
 }
 
 .secondaryNav a {
-  color: #0a0a0a;
+  color: #ffffff;
   font-weight: 700;
-  padding: 10px 40px;
-  border: 2px solid #0a0a0a;
-  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .secondaryNav a:hover {
@@ -686,12 +721,25 @@ header .wrapper {
   background-color: #0a0a0a;
 }
 
+.secondaryNav span {
+  margin: 0 5px;
+}
+
 footer {
-  margin-left: 10%;
+  margin-left: 8%;
+  padding-top: 75px;
+  background-color: #0a0a0a;
 }
 
 .contacts {
   text-align: center;
+  color: #ffffff;
+}
+
+.contacts > p {
+  margin-top: 20px;
+  padding: 30px 0;
+  font-size: 1.6rem;
 }
 
 .contacts .container {
@@ -718,7 +766,6 @@ footer {
 }
 
 .contacts form {
-  border: 5px solid #0a0a0a;
   border-radius: 20px;
 }
 
@@ -750,7 +797,7 @@ footer {
   padding: 10px 0;
   border: 3px solid #0a0a0a;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .contacts form ::-webkit-input-placeholder {

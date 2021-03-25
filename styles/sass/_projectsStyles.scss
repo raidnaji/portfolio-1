@@ -1,5 +1,8 @@
 .projects {
+    padding-top: 75px;
     text-align: center;
+    color: $secondary;
+    background-color: $primary;
 }
 
 .container {
@@ -12,18 +15,21 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
 }
 
 .projects .imageContainer {
-    width: calc(50% - 15px);
-    border: 3px solid $primary;
-    border-radius: 20px;
-    padding: 3px;
+    width: calc(45% - 15px);
+    border-radius: 20px; 
 
     img {
         border-radius: 17px;
+        object-fit: cover;
+        // width: 420px; 
+        // height: 300px;
+        width: 28vw;
+        height: 20vw;
     }
 }
 
@@ -32,31 +38,49 @@
     }
 
 .projects .textContent {
-    width: calc(50% - 15px);
+    width: calc(40% - 15px);
     margin-left: 30px;
+    text-align: left;
+    position: relative;
+
+    h3 {
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .technologies {
+        margin-bottom: 30px;
+
+        .decor {
+            margin: 0 5px;
+        }
+    }
 }
 
 .secondaryNav {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-    li {
-        width: 45%;
-    }
+    position: absolute;
+    bottom: 5px;
 
     a {
-        color: $primary;
+        color: $secondary;
         font-weight: 700;
-        padding: 10px 40px;
-        border: 2px solid $primary;
-        border-radius: 5px;
+        text-transform: uppercase;
     }
 
     a:hover {
         color: white;
         background-color: $primary;
-        // padding: 8px 38px;
-        // border: 4px solid black;
+    }
+
+    span {
+        margin: 0 5px;
     }
 }

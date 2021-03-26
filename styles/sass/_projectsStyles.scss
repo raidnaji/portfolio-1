@@ -1,5 +1,5 @@
 .projects {
-    padding-top: 75px;
+    padding-top: 35px;
     text-align: center;
     color: $secondary;
     background-color: $primary;
@@ -15,21 +15,21 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 90px;
+        margin-bottom: 150px;
     }
 }
 
 .projects .imageContainer {
-    width: calc(45% - 15px);
+    width: calc(50% - 30px);
     border-radius: 20px; 
 
     img {
         border-radius: 17px;
         object-fit: cover;
-        // width: 420px; 
-        // height: 300px;
-        width: 28vw;
-        height: 20vw;
+        width: 420px; 
+        height: 300px;
+        // width: 28vw;
+        // height: 20vw;
     }
 }
 
@@ -38,8 +38,8 @@
     }
 
 .projects .textContent {
-    width: calc(40% - 15px);
-    margin-left: 30px;
+    width: calc(50% - 75px);
+    margin-left: 80px;
     text-align: left;
     position: relative;
 
@@ -52,7 +52,7 @@
 
     p {
         margin-bottom: 20px;
-        width: 70%;
+        width: 90%;
     }
 
     .technologies {
@@ -62,6 +62,11 @@
             margin: 0 5px;
         }
     }
+}
+
+.projects .textContent:nth-of-type(odd) {
+    margin-left: 35px;
+    margin-right: 25px;
 }
 
 .secondaryNav {

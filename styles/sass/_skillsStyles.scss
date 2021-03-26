@@ -1,6 +1,6 @@
 .skills {
     padding-top: 90px;
-    padding-bottom: 150px;
+    padding-bottom: 110px;
     text-align: center;
     color: $secondary;
     background-color: $primary;
@@ -16,16 +16,22 @@
         width: 20%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         color: $secondary;
+        margin-bottom: 40px;
+        transition: all 0.2s;
     }
 
-    img {
-        width: 50px;
-        height: 60px;
-        color: black;
+    li:hover {
+        transform: scale(0.9);
     }
 
-    i {
+    i,
+    .iconify {
         font-size: 6rem;
+    }
+
+    span {
+        font-size: 1.8rem;
     }
 }

@@ -514,15 +514,59 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .visible a {
   padding: 10px 0;
 }
 
-.visible a:hover i,
-.visible a:focus i {
-  color: orange;
+.visible img,
+.visible a::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.visible a:hover::after,
+.visible a:focus::after {
+  width: 220px;
+  height: 40px;
+  top: 30px;
+  left: 115px;
+  color: black;
+  z-index: 1;
+  opacity: 1;
+}
+
+.visible a:hover img,
+.visible a:focus img {
+  top: 10px;
+  left: 100px;
+  width: 175px;
+  height: 70px;
+  opacity: 1;
+}
+
+.visible .rocket::after {
+  content: "Go back home";
+}
+
+.visible .astronaut::after {
+  content: "Get to know me";
+}
+
+.visible .meteor::after {
+  content: "Check my toolkit";
+}
+
+.visible .code::after {
+  content: "See my projects";
+}
+
+.visible .tower::after {
+  content: "Chat with me";
 }
 
 .visible a:hover,
@@ -530,9 +574,17 @@ header .wrapper {
   outline: none;
 }
 
+.visible a:hover i,
+.visible a:focus i {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
 .visible i {
   font-size: 4.5rem;
   color: #0a0a0a;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -632,7 +684,7 @@ header .wrapper {
 
 .skills {
   padding-top: 90px;
-  padding-bottom: 150px;
+  padding-bottom: 110px;
   text-align: center;
   color: #ffffff;
   background-color: #0a0a0a;
@@ -657,21 +709,31 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.skills ul img {
-  width: 50px;
-  height: 60px;
-  color: black;
+.skills ul li:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
-.skills ul i {
+.skills ul i,
+.skills ul .iconify {
   font-size: 6rem;
 }
 
+.skills ul span {
+  font-size: 1.8rem;
+}
+
 .projects {
-  padding-top: 75px;
+  padding-top: 35px;
   text-align: center;
   color: #ffffff;
   background-color: #0a0a0a;
@@ -695,11 +757,11 @@ header .wrapper {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 150px;
 }
 
 .projects .imageContainer {
-  width: calc(45% - 15px);
+  width: calc(50% - 30px);
   border-radius: 20px;
 }
 
@@ -707,8 +769,8 @@ header .wrapper {
   border-radius: 17px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 28vw;
-  height: 20vw;
+  width: 420px;
+  height: 300px;
 }
 
 .imageContainer:hover {
@@ -717,8 +779,8 @@ header .wrapper {
 }
 
 .projects .textContent {
-  width: calc(40% - 15px);
-  margin-left: 30px;
+  width: calc(50% - 75px);
+  margin-left: 80px;
   text-align: left;
   position: relative;
 }
@@ -732,7 +794,7 @@ header .wrapper {
 
 .projects .textContent p {
   margin-bottom: 20px;
-  width: 70%;
+  width: 90%;
 }
 
 .projects .textContent .technologies {
@@ -741,6 +803,11 @@ header .wrapper {
 
 .projects .textContent .technologies .decor {
   margin: 0 5px;
+}
+
+.projects .textContent:nth-of-type(odd) {
+  margin-left: 35px;
+  margin-right: 25px;
 }
 
 .secondaryNav {
@@ -798,8 +865,8 @@ footer {
 }
 
 .contacts .textContent {
-  width: calc(25% - 15px);
-  margin-right: 30px;
+  width: 35%;
+  margin-right: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,7 +902,7 @@ footer {
 }
 
 .contacts form {
-  width: calc(45% - 15px);
+  width: 45%;
   border-radius: 20px;
 }
 

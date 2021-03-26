@@ -45,15 +45,59 @@ header .wrapper {
         width: inherit;
         display: flex;
         justify-content: center;
+        position: relative;
     }
 
     a {
         padding: 10px 0;
     }
 
-    a:hover i,
-    a:focus i {                
-        color: orange;
+    img,
+    a::after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    a:hover::after,
+    a:focus::after {
+        width: 220px;
+        height: 40px;
+        top: 30px;
+        left: 115px;
+        color: black;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    a:hover img,
+    a:focus img {
+        top: 10px;
+        left: 100px;
+        width: 175px;
+        height: 70px;
+        opacity: 1;
+    }
+
+    .rocket::after {
+        content: "Go back home";
+    }
+
+    .astronaut::after {
+        content: "Get to know me"
+    }
+
+    .meteor::after {
+        content: "Check my toolkit"
+    }
+
+    .code::after {
+        content: "See my projects"
+    }
+
+    .tower::after {
+        content: "Chat with me"
     }
 
     a:hover,
@@ -61,9 +105,15 @@ header .wrapper {
         outline: none;  
     }
 
+    a:hover i,
+    a:focus i {
+        transform: scale(0.85);
+    }
+
     i {
         font-size: 4.5rem;
-        color: $primary;       
+        color: $primary;     
+        transition: all 0.2s;  
     }
 }
 

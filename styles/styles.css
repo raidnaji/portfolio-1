@@ -509,7 +509,7 @@ header .wrapper {
 
 .visible li {
   padding: 10px 0;
-  width: inherit;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +520,14 @@ header .wrapper {
 }
 
 .visible a {
+  width: 100%;
   padding: 10px 0;
+  text-align: center;
+}
+
+.visible img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .visible img,
@@ -533,10 +540,11 @@ header .wrapper {
 
 .visible a:hover::after,
 .visible a:focus::after {
-  width: 220px;
+  width: 170px;
   height: 40px;
   top: 30px;
-  left: 115px;
+  left: 107px;
+  font-weight: 600;
   color: black;
   z-index: 1;
   opacity: 1;
@@ -544,10 +552,10 @@ header .wrapper {
 
 .visible a:hover img,
 .visible a:focus img {
-  top: 10px;
+  top: 17.5px;
   left: 100px;
   width: 175px;
-  height: 70px;
+  height: 50px;
   opacity: 1;
 }
 
@@ -610,7 +618,7 @@ header .wrapper {
 .caretSquare {
   position: absolute;
   bottom: 25px;
-  left: 50%;
+  left: calc(50% - (3.3rem / 2));
   -webkit-animation-name: caretMove;
           animation-name: caretMove;
   -webkit-animation-duration: 1s;
@@ -762,12 +770,8 @@ header .wrapper {
   margin-bottom: 150px;
 }
 
-.projects .imageContainer {
-  width: calc(50% - 30px);
+.projects img {
   border-radius: 20px;
-}
-
-.projects .imageContainer img {
   border-radius: 17px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -775,13 +779,13 @@ header .wrapper {
   height: 300px;
 }
 
-.imageContainer:hover {
+.projects img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .projects .textContent {
-  width: calc(50% - 75px);
+  width: 50%;
   margin-left: 80px;
   text-align: left;
   position: relative;
@@ -795,12 +799,13 @@ header .wrapper {
 }
 
 .projects .textContent p {
+  text-align: justify;
   margin-bottom: 20px;
-  width: 90%;
+  width: 100%;
 }
 
 .projects .textContent .technologies {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .projects .textContent .technologies .decor {
@@ -808,8 +813,8 @@ header .wrapper {
 }
 
 .projects .textContent:nth-of-type(odd) {
-  margin-left: 35px;
-  margin-right: 25px;
+  margin-left: 0;
+  margin-right: 80px;
 }
 
 .secondaryNav {

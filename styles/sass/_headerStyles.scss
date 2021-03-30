@@ -43,14 +43,20 @@ header .wrapper {
 
     li {
         padding: 10px 0;
-        width: inherit;
+        width: 100%;
         display: flex;
         justify-content: center;
         position: relative;
     }
 
     a {
+        width: 100%;
         padding: 10px 0;
+        text-align: center;
+    }
+
+    img {
+        transform: rotate(180deg);
     }
 
     img,
@@ -63,21 +69,22 @@ header .wrapper {
 
     a:hover::after,
     a:focus::after {
-        width: 220px;
+        width: 170px;
         height: 40px;
         top: 30px;
-        left: 115px;
+        left: 107px;
+        font-weight: 600;
         color: black;
         z-index: 1;
         opacity: 1;
     }
-
+     
     a:hover img,
     a:focus img {
-        top: 10px;
+        top: 17.5px;
         left: 100px;
         width: 175px;
-        height: 70px;
+        height: 50px;
         opacity: 1;
     }
 
@@ -131,7 +138,7 @@ header .wrapper {
 .caretSquare {
     position: absolute;
     bottom: 25px;
-    left: 50%;
+    left: calc(50% - (3.3rem / 2));
     animation-name: caretMove;
     animation-duration: 1s;
     animation-iteration-count: infinite;

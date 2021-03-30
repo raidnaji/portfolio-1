@@ -19,11 +19,10 @@
     }
 }
 
-.projects .imageContainer {
-    width: calc(50% - 30px);
-    border-radius: 20px; 
 
-    img {
+
+.projects img {
+        border-radius: 20px; 
         border-radius: 17px;
         object-fit: cover;
         width: 420px; 
@@ -31,14 +30,13 @@
         // width: 28vw;
         // height: 20vw;
     }
-}
 
-.imageContainer:hover {
+.projects img:hover {
         transform: scale(1.1);
     }
 
 .projects .textContent {
-    width: calc(50% - 75px);
+    width: 50%;
     margin-left: 80px;
     text-align: left;
     position: relative;
@@ -51,12 +49,13 @@
     }
 
     p {
+        text-align: justify;
         margin-bottom: 20px;
-        width: 90%;
+        width: 100%;
     }
 
     .technologies {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         .decor {
             margin: 0 5px;
@@ -65,8 +64,8 @@
 }
 
 .projects .textContent:nth-of-type(odd) {
-    margin-left: 35px;
-    margin-right: 25px;
+    margin-left: 0;
+    margin-right: 80px;
 }
 
 .secondaryNav {

@@ -976,62 +976,43 @@ footer {
 
 .contacts form input:hover,
 .contacts form input:focus,
+.contacts form textarea:hover,
+.contacts form textarea:focus {
+  background-color: #dad6d6;
+  border-radius: 5px;
+  outline: none;
+}
+
 .contacts form input:hover::-webkit-input-placeholder,
 .contacts form input:focus::-webkit-input-placeholder,
-.contacts form textarea:hover,
-.contacts form textarea:focus,
 .contacts form textarea:hover::-webkit-input-placeholder,
 .contacts form textarea:focus::-webkit-input-placeholder {
-  background-color: #dad6d6;
-  border-radius: 5px;
   color: #0a0a0a;
   opacity: 1;
-  outline: none;
 }
 
-.contacts form input:hover,
-.contacts form input:focus,
 .contacts form input:hover:-ms-input-placeholder,
 .contacts form input:focus:-ms-input-placeholder,
-.contacts form textarea:hover,
-.contacts form textarea:focus,
 .contacts form textarea:hover:-ms-input-placeholder,
 .contacts form textarea:focus:-ms-input-placeholder {
-  background-color: #dad6d6;
-  border-radius: 5px;
   color: #0a0a0a;
   opacity: 1;
-  outline: none;
 }
 
-.contacts form input:hover,
-.contacts form input:focus,
 .contacts form input:hover::-ms-input-placeholder,
 .contacts form input:focus::-ms-input-placeholder,
-.contacts form textarea:hover,
-.contacts form textarea:focus,
 .contacts form textarea:hover::-ms-input-placeholder,
 .contacts form textarea:focus::-ms-input-placeholder {
-  background-color: #dad6d6;
-  border-radius: 5px;
   color: #0a0a0a;
   opacity: 1;
-  outline: none;
 }
 
-.contacts form input:hover,
-.contacts form input:focus,
 .contacts form input:hover::placeholder,
 .contacts form input:focus::placeholder,
-.contacts form textarea:hover,
-.contacts form textarea:focus,
 .contacts form textarea:hover::placeholder,
 .contacts form textarea:focus::placeholder {
-  background-color: #dad6d6;
-  border-radius: 5px;
   color: #0a0a0a;
   opacity: 1;
-  outline: none;
 }
 
 .contacts form button:hover,

@@ -106,17 +106,19 @@ footer {
     
     input:hover,
     input:focus,
-    input:hover::placeholder,
-    input:focus::placeholder,
     textarea:hover,
-    textarea:focus,
-    textarea:hover::placeholder,
-    textarea:focus::placeholder {
+    textarea:focus {
         background-color: #dad6d6;
         border-radius: 5px;
+        outline: none;
+    }
+
+    input:hover::placeholder,
+    input:focus::placeholder,
+    textarea:hover::placeholder,
+    textarea:focus::placeholder {
         color: $primary;
         opacity: 1;
-        outline: none;
     }
 
     button:hover,

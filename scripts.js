@@ -1,11 +1,12 @@
 const app = {};
 
 app.displayNav = () => {
-    const navigationMenu = document.querySelector('nav');
+    const navigationMenu = document.querySelector('.mainNav');
 
-        if (window.pageYOffset > window.innerHeight) {
+        if (window.pageYOffset > 500) {
             navigationMenu.classList.add('visible');
             navigationMenu.classList.remove('hidden');
+            
         } else {
             navigationMenu.classList.add('hidden');
             navigationMenu.classList.remove('visible');
@@ -13,7 +14,6 @@ app.displayNav = () => {
 }
 
 app.appInit = () => {
-    console.log(window.pageYOffset, window.innerHeight)
     window.addEventListener("scroll", app.displayNav);
 }
 

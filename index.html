@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="#" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./styles/styles.css" />
         <script src="https://kit.fontawesome.com/ea3b5e355b.js" crossorigin="anonymous"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -160,10 +161,10 @@
                     <h2>Projects</h2>
                     <ul class="container">
                         <li>
-                            <div class="imageContainer">
+                            <div class="imageContainer" data-aos="fade-right">
                                 <img src="./assests/haikusHighway.png" alt="">
                             </div>
-                            <div class="textContent">
+                            <div class="textContent" data-aos="fade-left">
                                 <h3>Haikus Highway</h3>
                                 <p class="technologies">
                                     Sass
@@ -183,7 +184,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="textContent">
+                            <div class="textContent"  data-aos="fade-right">
                                 <h3>Football | Soccer Statistics App</h3>
                                 <p class="technologies">
                                     Sass
@@ -194,20 +195,20 @@
                                 </p>
                                 <p>Soccer app gets latest API data to showcase leagues' standings for those who are fond of soccer.</p>
                                 <div class="secondaryNav">
-                                        <a href="https://haikushighway.netlify.app/" target="blank">Website</a>
+                                        <a href="https://soccer-statistics.netlify.app/" target="blank">Website</a>
                                         <span>|</span>
-                                        <a href="https://github.com/teamAwesomenessest/haikusHighway" target="blank">GitHub</a>
+                                        <a href="https://github.com/antonmontrezor/AntonMontrezorProject3" target="blank">GitHub</a>
                                 </div>
                             </div>
-                            <div class="imageContainer">
+                            <div class="imageContainer" data-aos="fade-left">
                                 <img src="./assests/footballApp.png" alt="">
                             </div>
                         </li>
                         <li>
-                            <div class="imageContainer">
+                            <div class="imageContainer" data-aos="fade-right">
                                 <img src="./assests/weatherApp.png" alt="">
                             </div>
-                            <div class="textContent">
+                            <div class="textContent" data-aos="fade-left">
                                 <h3>Friendly Weather App</h3>
                                 <p class="technologies">
                                     HTML5
@@ -220,9 +221,9 @@
                                 </p>
                                 <p>A handy weather app that helps anyone to prepare for their adventures outside.</p>
                                 <div class="secondaryNav">
-                                        <a href="https://haikushighway.netlify.app/" target="blank">Website</a>
+                                        <a href="https://friendly-weather-app.netlify.app/" target="blank">Website</a>
                                         <span>|</span>
-                                        <a href="https://github.com/teamAwesomenessest/haikusHighway" target="blank">GitHub</a>
+                                        <a href="https://github.com/Nihal-and-Anton/friendly-weather-app" target="blank">GitHub</a>
                                 </div>
                             </div>
                         </li>
@@ -238,25 +239,25 @@
                         <div class="textContent">
                             <p>If you have any questions, suggestions or you simply want to chat, please fill out the contact form or reach me out using any preferable means of communication.</p>
                             <div class="socialMedia">
-                                <a href="https://github.com/antonmontrezor">
+                                <a href="https://github.com/antonmontrezor" target="blank">
                                     <span class="srOnly">Go to GitHub</span>
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/in/anton-montrezor/">
+                                <a href="https://www.linkedin.com/in/anton-montrezor/" target="blank">
                                     <span class="srOnly">Go to LinkedIn</span>
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="https://twitter.com/anton_montrezor">
+                                <a href="https://twitter.com/anton_montrezor" target="blank">
                                     <span class="srOnly">Go to Twitter</span>
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="mailto:montrezornaton991@gmail.com">
+                                <a href="mailto:montrezornaton991@gmail.com" target="blank">
                                     <span class="srOnly">Send email</span>
                                     <i class="fas fa-envelope"></i>
                                 </a>  
                             </div>
                         </div>
-                        <form action="">
+                        <form name="contact" netlify>
                             <fieldset class="userInformation">
                                 <legend class="srOnly">Type your name and email</legend>
     
@@ -278,5 +279,9 @@
         <script src="./particles.js"></script>
         <script src="./app.js"></script>
         <script src="./scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

@@ -393,6 +393,7 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -479,6 +480,7 @@ header .wrapper {
 }
 
 .visible {
+  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;

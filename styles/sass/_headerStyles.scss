@@ -17,16 +17,15 @@ header .wrapper {
     height: inherit;
 }
 
-.hidden {
+.mainNav.hidden {
     display: none;
 }
 
-.visible {
+.mainNav.visible {
     visibility: visible;
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: #D3D3D3;
     height: 100vh;
     width: 8%;
     animation: fadeIn 2s;
@@ -65,6 +64,8 @@ header .wrapper {
         width: 0;
         height: 0;
         opacity: 0;
+        color: transparent;
+        transition: opacity 0.35s;
     }
 
     a:hover::after,
@@ -119,7 +120,7 @@ header .wrapper {
     }
 
     i {
-        font-size: 4.5rem;
+        font-size: calc(3rem + 1vw);
         color: $primary;     
         transition: all 0.2s;  
     }

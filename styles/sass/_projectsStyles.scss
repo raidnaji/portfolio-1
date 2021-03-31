@@ -5,7 +5,7 @@
     background-color: $primary;
 }
 
-.container {
+.projects .container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +29,7 @@
         height: 300px;
         // width: 28vw;
         // height: 20vw;
+        transition: all 0.2s;
     }
 
 .projects img:hover {
@@ -77,6 +78,7 @@
         color: $secondary;
         font-weight: 700;
         text-transform: uppercase;
+        transition: all 0.2s;
     }
 
     a:hover,

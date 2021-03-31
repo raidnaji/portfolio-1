@@ -398,7 +398,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 2rem;
+  font-size: calc(1.6rem + 0.2vw);
 }
 
 main {
@@ -407,7 +407,7 @@ main {
 
 h1 {
   color: white;
-  font-size: 5rem;
+  font-size: calc(2.75rem + 1.5vw);
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
 }
@@ -475,11 +475,11 @@ header .wrapper {
   height: inherit;
 }
 
-.hidden {
+.mainNav.hidden {
   display: none;
 }
 
-.visible {
+.mainNav.visible {
   visibility: visible;
   position: fixed;
   top: 0;
@@ -490,7 +490,7 @@ header .wrapper {
           animation: fadeIn 2s;
 }
 
-.visible ul {
+.mainNav.visible ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +507,7 @@ header .wrapper {
   background-color: orange;
 }
 
-.visible li {
+.mainNav.visible li {
   padding: 10px 0;
   width: 100%;
   display: -webkit-box;
@@ -519,27 +519,30 @@ header .wrapper {
   position: relative;
 }
 
-.visible a {
+.mainNav.visible a {
   width: 100%;
   padding: 10px 0;
   text-align: center;
 }
 
-.visible img {
+.mainNav.visible img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.visible img,
-.visible a::after {
+.mainNav.visible img,
+.mainNav.visible a::after {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
+  color: transparent;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 
-.visible a:hover::after,
-.visible a:focus::after {
+.mainNav.visible a:hover::after,
+.mainNav.visible a:focus::after {
   width: 170px;
   height: 40px;
   top: 30px;
@@ -550,8 +553,8 @@ header .wrapper {
   opacity: 1;
 }
 
-.visible a:hover img,
-.visible a:focus img {
+.mainNav.visible a:hover img,
+.mainNav.visible a:focus img {
   top: 17.5px;
   left: 100px;
   width: 175px;
@@ -559,39 +562,39 @@ header .wrapper {
   opacity: 1;
 }
 
-.visible .rocket::after {
+.mainNav.visible .rocket::after {
   content: "Go back home";
 }
 
-.visible .astronaut::after {
+.mainNav.visible .astronaut::after {
   content: "Get to know me";
 }
 
-.visible .meteor::after {
+.mainNav.visible .meteor::after {
   content: "Check my toolkit";
 }
 
-.visible .code::after {
+.mainNav.visible .code::after {
   content: "See my projects";
 }
 
-.visible .tower::after {
+.mainNav.visible .tower::after {
   content: "Chat with me";
 }
 
-.visible a:hover,
-.visible a:focus {
+.mainNav.visible a:hover,
+.mainNav.visible a:focus {
   outline: none;
 }
 
-.visible a:hover i,
-.visible a:focus i {
+.mainNav.visible a:hover i,
+.mainNav.visible a:focus i {
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
 }
 
-.visible i {
-  font-size: 4.5rem;
+.mainNav.visible i {
+  font-size: calc(3rem + 1vw);
   color: #0a0a0a;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -666,10 +669,13 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about .image-container {
   width: 37%;
+  float: left;
 }
 
 .image-container img {
@@ -679,11 +685,12 @@ header .wrapper {
 .about .text-content {
   width: 45%;
   margin-left: 40px;
+  float: left;
 }
 
 .about p {
   line-height: 1.5;
-  text-align: left;
+  text-align: justify;
   margin: 0;
 }
 
@@ -708,10 +715,14 @@ header .wrapper {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills ul li {
   width: 20%;
+  min-width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,11 +746,11 @@ header .wrapper {
 
 .skills ul i,
 .skills ul .iconify {
-  font-size: 6rem;
+  font-size: calc(4.5rem + 1vw);
 }
 
 .skills ul span {
-  font-size: 1.8rem;
+  font-size: calc(1.6rem + 0.1vw);
 }
 
 .projects {
@@ -749,7 +760,7 @@ header .wrapper {
   background-color: #0a0a0a;
 }
 
-.container {
+.projects .container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,7 +770,7 @@ header .wrapper {
   margin: 0 auto;
 }
 
-.container > li {
+.projects .container > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -777,6 +788,8 @@ header .wrapper {
      object-fit: cover;
   width: 420px;
   height: 300px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .projects img:hover {
@@ -829,6 +842,8 @@ header .wrapper {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .secondaryNav a:hover,
@@ -879,7 +894,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: left;
+  text-align: justify;
   position: relative;
 }
 
@@ -906,6 +921,8 @@ footer {
 .contacts .textContent i {
   color: #ffffff;
   font-size: 3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contacts form {
@@ -932,6 +949,8 @@ footer {
   font-size: 1.8rem;
   border: none;
   overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contacts form input:first-of-type {
@@ -948,6 +967,8 @@ footer {
   border: none;
   font-size: 1.8rem;
   overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .contacts form button {
@@ -957,6 +978,8 @@ footer {
   border-radius: 5px;
   border: none;
   background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contacts form ::-webkit-input-placeholder {
@@ -1024,4 +1047,43 @@ footer {
 .contacts form button:focus {
   background-color: #ffa500;
   cursor: pointer;
+}
+
+@media (min-width: 1500px) {
+  body {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .mainNav.visible i {
+    font-size: 4.5rem;
+  }
+  .skills i,
+  .skills .iconify {
+    font-size: 6rem;
+  }
+  .skills span {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1289px) {
+  .about .image-container {
+    width: 350px;
+  }
+  .about .image-container img {
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .about .text-content {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .skills ul {
+    width: 100%;
+  }
 }

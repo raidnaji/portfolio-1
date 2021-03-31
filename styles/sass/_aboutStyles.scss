@@ -6,10 +6,12 @@
 .about .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about .image-container {
     width: 37%;
+    float: left;
 }
 
 .image-container img {
@@ -19,11 +21,12 @@
 .about .text-content {
     width: 45%;
     margin-left: 40px;
+    float: left;
 }
 
 .about p {
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
     margin: 0;
 }
 

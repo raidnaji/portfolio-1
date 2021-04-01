@@ -1304,6 +1304,16 @@ body.submissionCompleted .submissionMessage a:focus {
     width: 70%;
     margin: 70px auto 0 auto;
   }
+  body.submissionCompleted .submissionMessage {
+    margin: 0 20px;
+  }
+  body.submissionCompleted .submissionMessage h1 {
+    font-size: calc(2rem + 0.2vw);
+  }
+  body.submissionCompleted .submissionMessage a,
+  body.submissionCompleted .submissionMessage p {
+    font-size: calc(1.6rem + 0.2vw);
+  }
 }
 
 @media (max-width: 420px) {

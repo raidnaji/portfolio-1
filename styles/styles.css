@@ -278,7 +278,7 @@ html {
 .text3::after {
   content: '_';
   position: absolute;
-  right: -10px;
+  right: 0;
   -webkit-animation: caret infinite;
           animation: caret infinite;
   -webkit-animation-duration: 1s;
@@ -295,7 +295,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 8.9em;
+    width: 9.5em;
   }
 }
 
@@ -307,7 +307,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 8.9em;
+    width: 9.5em;
   }
 }
 
@@ -320,7 +320,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.5em;
+    width: 13em;
   }
 }
 
@@ -333,7 +333,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.5em;
+    width: 13em;
   }
 }
 
@@ -345,7 +345,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 14.9em;
+    width: 15.5em;
   }
 }
 
@@ -357,7 +357,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 14.9em;
+    width: 15.5em;
   }
 }
 

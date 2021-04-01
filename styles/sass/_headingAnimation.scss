@@ -28,7 +28,7 @@
 .text3::after {
     content: '_';
     position: absolute;
-    right: -10px;
+    right: 0;
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
@@ -43,7 +43,7 @@
 
     2.5%,
     27.5% {
-        width: 8.9em;
+        width: 9.5em;
     }
 }
 
@@ -57,7 +57,7 @@
 
     32.5%,
     62.5% {
-        width: 12.5em;
+        width: 13em;
     }
 }
 
@@ -70,7 +70,7 @@
 
     67.5%,
     97.5% {
-        width: 14.9em;
+        width: 15.5em;
     }
 }
 

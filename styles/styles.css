@@ -278,7 +278,7 @@ html {
 .text3::after {
   content: '_';
   position: absolute;
-  right: -2px;
+  right: -5px;
   -webkit-animation: caret infinite;
           animation: caret infinite;
   -webkit-animation-duration: 1s;

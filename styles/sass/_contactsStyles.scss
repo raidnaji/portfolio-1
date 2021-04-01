@@ -130,6 +130,13 @@ footer {
         background-color: $interactive;
         cursor: pointer;
     }
+
+    input:required,
+    input:invalid,
+    textarea:required,
+    textarea:invalid {
+        box-shadow:none;
+    }
 }
 
 

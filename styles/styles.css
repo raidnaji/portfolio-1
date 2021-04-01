@@ -1210,6 +1210,9 @@ footer {
 }
 
 @media (max-width: 420px) {
+  html {
+    scroll-behavior: auto;
+  }
   .projects .container .textContent {
     width: 90%;
   }

@@ -267,8 +267,8 @@ html {
   position: relative;
   -webkit-animation-duration: 6.5s;
           animation-duration: 6.5s;
-  -webkit-animation-timing-function: steps(57, end);
-          animation-timing-function: steps(57, end);
+  -webkit-animation-timing-function: steps(60, end);
+          animation-timing-function: steps(60, end);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -1108,7 +1108,7 @@ footer {
     display: none;
   }
   .mainNav.visible i {
-    font-size: calc(0.8rem + 3.3vw);
+    font-size: calc(1.5rem + 2.7vw);
   }
   .mainNav.visible a:hover i,
   .mainNav.visible a:focus i {
@@ -1127,7 +1127,7 @@ footer {
   .contacts .textContent {
     margin-right: 0;
     width: 58%;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
   }
   .contacts form {
     width: 65%;
@@ -1199,16 +1199,22 @@ footer {
   }
   .contacts form {
     width: 80%;
-    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 560px) {
+  main,
+  footer {
+    margin-left: 12%;
+  }
   h1 {
     font-size: 6vw;
   }
+  .mainNav.visible {
+    width: 12%;
+  }
   .mainNav.visible li {
-    padding: 0;
+    padding: 5px 0;
   }
   .mainNav.visible a {
     padding: 10px 0;
@@ -1222,15 +1228,17 @@ footer {
   .contacts .textContent {
     margin-right: 0;
     width: 88%;
-    padding-bottom: 50px;
   }
   .contacts form {
     width: 95%;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
-  .contacts p {
+  .contacts .textContent {
+    margin-top: 70px;
+  }
+  .contacts > p {
     width: 70%;
-    margin: 75px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 }
 

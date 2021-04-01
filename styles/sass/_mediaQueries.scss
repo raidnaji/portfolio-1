@@ -65,7 +65,7 @@
         }
 
         i {
-            font-size: calc(0.8rem + 3.3vw);
+            font-size: calc(1.5rem + 2.7vw);
         }
 
         a:hover i,
@@ -82,7 +82,7 @@
     .contacts .textContent {
         margin-right: 0;
         width: 58%;
-        padding-bottom: 100px;
+        padding-bottom: 110px;
     }
 
     .contacts form {
@@ -166,18 +166,24 @@
 
     .contacts form {
         width: 80%;
-        margin-bottom: 40px;
     }
 }   
 
 @media (max-width: 560px) {
+    main,
+    footer {
+        margin-left: 12%;
+    }
+
     h1 {
         font-size: 6vw;
     }
 
     .mainNav.visible {
+        width: 12%;
+
         li {
-            padding: 0;
+            padding: 5px 0;
         }
 
         a {
@@ -198,17 +204,20 @@
     .contacts .textContent {
         margin-right: 0;
         width: 88%;
-        padding-bottom: 50px;
     }
 
     .contacts form {
         width: 95%;
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
 
-    .contacts p {
+    .contacts .textContent {
+        margin-top: 70px;
+    }
+
+    .contacts > p {
         width: 70%;
-        margin: 75px auto 0 auto;
+        margin: 70px auto 0 auto;
     }
 }
 

@@ -594,7 +594,7 @@ header .wrapper {
 }
 
 .mainNav.visible i {
-  font-size: calc(3rem + 1vw);
+  font-size: 4.5rem;
   color: #0a0a0a;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -888,7 +888,7 @@ footer {
 }
 
 .contacts .textContent {
-  width: 35%;
+  width: 36%;
   margin-right: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,7 +1079,8 @@ footer {
   .about .image-container img {
     border-radius: 40px;
   }
-  .projects .wrapper {
+  .projects .wrapper,
+  .contacts .wrapper {
     width: 90%;
   }
   .projects .textContent {
@@ -1087,6 +1088,37 @@ footer {
   }
   .projects .textContent:nth-of-type(odd) {
     margin-right: 60px;
+  }
+  .contacts .textContent {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .mainNav.visible img,
+  .mainNav.visible a::after {
+    display: none;
+  }
+  .mainNav.visible i {
+    font-size: calc(0.8rem + 3.3vw);
+  }
+  .contacts .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts .textContent {
+    margin-right: 0;
+    width: 58%;
+    padding-bottom: 50px;
+  }
+  .contacts form {
+    width: 65%;
+    margin-bottom: 40px;
   }
 }
 
@@ -1133,10 +1165,43 @@ footer {
   .projects .container .textContent {
     width: 65%;
   }
+  .contacts .textContent {
+    margin-right: 0;
+    width: 73%;
+    padding-bottom: 50px;
+  }
+  .contacts form {
+    width: 80%;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 560px) {
+  .about .text-content {
+    width: 100%;
+  }
   .projects .container .textContent {
     width: 80%;
+  }
+  .contacts .textContent {
+    margin-right: 0;
+    width: 88%;
+    padding-bottom: 50px;
+  }
+  .contacts form {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .projects .container .textContent {
+    width: 90%;
+  }
+  .projects .container img {
+    width: calc(210px + 14vw);
+    height: calc(100px + 14vw);
+    -webkit-transform: none;
+            transform: none;
   }
 }

@@ -39,7 +39,8 @@
         }
     }
 
-    .projects .wrapper {
+    .projects .wrapper,
+    .contacts .wrapper {
         width: 90%;
     }
 
@@ -49,7 +50,40 @@
 
     .projects .textContent:nth-of-type(odd) {
     margin-right: 60px;
+    }
+
+    .contacts .textContent {
+        margin-right: 50px;
+    }
 }
+
+@media (max-width: 1080px) {
+    .mainNav.visible {
+        img,
+        a::after {
+            display: none;
+        }
+
+        i {
+            font-size: calc(0.8rem + 3.3vw);
+        }
+    }
+
+    .contacts .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contacts .textContent {
+        margin-right: 0;
+        width: 58%;
+        padding-bottom: 50px;
+    }
+
+    .contacts form {
+        width: 65%;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -97,12 +131,51 @@
             width: 65%;
         }
     }
+
+    .contacts .textContent {
+        margin-right: 0;
+        width: 73%;
+        padding-bottom: 50px;
+    }
+
+    .contacts form {
+        width: 80%;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 560px) {
+    .about .text-content{
+        width: 100%;
+    }
     .projects .container {
         .textContent {
             width: 80%;
+        }
+    }
+
+    .contacts .textContent {
+        margin-right: 0;
+        width: 88%;
+        padding-bottom: 50px;
+    }
+
+    .contacts form {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .projects .container {
+         .textContent {
+            width: 90%;
+        }
+
+        img {
+            width: calc(210px + 14vw);
+            height: calc(100px + 14vw);
+            transform: none;
         }
     }
 }

@@ -233,4 +233,60 @@
             transform: none;
         }
     }
+
+    @keyframes text1 {
+        0%,
+        30%,
+        100% {
+            width: 0;
+        }
+
+        2.5%,
+        27.5% {
+            width: 9.25em;
+        }
+    }
+
+    @keyframes text2 {
+        0%,
+        30%,
+        65%,
+        100% {
+            width: 0;
+        }
+
+        32.5%,
+        62.5% {
+            width: 12.85em;
+        }
+    }
+
+    @keyframes text3 {
+        0%,
+        65%,
+        100% {
+            width: 0;
+        }
+
+        67.5%,
+        97.5% {
+            width: 15.25em;
+        }
+    }
+
+    @keyframes caret {
+        from,
+        to {
+            color: transparent;
+        }
+
+        5%, 
+        25%,
+        35%,
+        60%,
+        70%,
+        95% {
+            color: white;
+        }
+    }
 }

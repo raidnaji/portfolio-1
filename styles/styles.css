@@ -295,7 +295,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 9.1em;
+    width: 8.9em;
   }
 }
 
@@ -307,7 +307,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 9.1em;
+    width: 8.9em;
   }
 }
 
@@ -320,7 +320,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.7em;
+    width: 12.5em;
   }
 }
 
@@ -333,7 +333,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.7em;
+    width: 12.5em;
   }
 }
 
@@ -345,7 +345,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 15.1em;
+    width: 14.9em;
   }
 }
 
@@ -357,7 +357,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 15.1em;
+    width: 14.9em;
   }
 }
 
@@ -1251,5 +1251,101 @@ footer {
     height: calc(100px + 14vw);
     -webkit-transform: none;
             transform: none;
+  }
+  @-webkit-keyframes text1 {
+    0%,
+    30%,
+    100% {
+      width: 0;
+    }
+    2.5%,
+    27.5% {
+      width: 9.25em;
+    }
+  }
+  @keyframes text1 {
+    0%,
+    30%,
+    100% {
+      width: 0;
+    }
+    2.5%,
+    27.5% {
+      width: 9.25em;
+    }
+  }
+  @-webkit-keyframes text2 {
+    0%,
+    30%,
+    65%,
+    100% {
+      width: 0;
+    }
+    32.5%,
+    62.5% {
+      width: 12.85em;
+    }
+  }
+  @keyframes text2 {
+    0%,
+    30%,
+    65%,
+    100% {
+      width: 0;
+    }
+    32.5%,
+    62.5% {
+      width: 12.85em;
+    }
+  }
+  @-webkit-keyframes text3 {
+    0%,
+    65%,
+    100% {
+      width: 0;
+    }
+    67.5%,
+    97.5% {
+      width: 15.25em;
+    }
+  }
+  @keyframes text3 {
+    0%,
+    65%,
+    100% {
+      width: 0;
+    }
+    67.5%,
+    97.5% {
+      width: 15.25em;
+    }
+  }
+  @-webkit-keyframes caret {
+    from,
+    to {
+      color: transparent;
+    }
+    5%,
+    25%,
+    35%,
+    60%,
+    70%,
+    95% {
+      color: white;
+    }
+  }
+  @keyframes caret {
+    from,
+    to {
+      color: transparent;
+    }
+    5%,
+    25%,
+    35%,
+    60%,
+    70%,
+    95% {
+      color: white;
+    }
   }
 }

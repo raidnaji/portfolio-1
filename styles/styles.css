@@ -267,8 +267,8 @@ html {
   position: relative;
   -webkit-animation-duration: 6.5s;
           animation-duration: 6.5s;
-  -webkit-animation-timing-function: steps(57, end);
-          animation-timing-function: steps(57, end);
+  -webkit-animation-timing-function: steps(58, end);
+          animation-timing-function: steps(58, end);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -295,7 +295,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 8.9em;
+    width: 9.1em;
   }
 }
 
@@ -307,7 +307,7 @@ html {
   }
   2.5%,
   27.5% {
-    width: 8.9em;
+    width: 9.1em;
   }
 }
 
@@ -320,7 +320,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.5em;
+    width: 12.7em;
   }
 }
 
@@ -333,7 +333,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 12.5em;
+    width: 12.7em;
   }
 }
 
@@ -345,7 +345,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 14.9em;
+    width: 15.1em;
   }
 }
 
@@ -357,7 +357,7 @@ html {
   }
   67.5%,
   97.5% {
-    width: 14.9em;
+    width: 15.1em;
   }
 }
 

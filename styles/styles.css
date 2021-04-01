@@ -394,11 +394,15 @@ html {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: calc(1.6rem + 0.2vw);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 main {
@@ -1210,9 +1214,6 @@ footer {
 }
 
 @media (max-width: 420px) {
-  html {
-    scroll-behavior: auto;
-  }
   .projects .container .textContent {
     width: 90%;
   }

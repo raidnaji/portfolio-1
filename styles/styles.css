@@ -267,8 +267,8 @@ html {
   position: relative;
   -webkit-animation-duration: 6.5s;
           animation-duration: 6.5s;
-  -webkit-animation-timing-function: steps(31, end);
-          animation-timing-function: steps(31, end);
+  -webkit-animation-timing-function: steps(57, end);
+          animation-timing-function: steps(57, end);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -320,7 +320,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 16.1em;
+    width: 12.5em;
   }
 }
 
@@ -333,7 +333,7 @@ html {
   }
   32.5%,
   62.5% {
-    width: 16.1em;
+    width: 12.5em;
   }
 }
 
@@ -1127,7 +1127,7 @@ footer {
   .contacts .textContent {
     margin-right: 0;
     width: 58%;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .contacts form {
     width: 65%;
@@ -1136,13 +1136,28 @@ footer {
 }
 
 @media (max-width: 1050px) {
+  .about {
+    padding-bottom: 75px;
+  }
+  .about h2 {
+    margin-bottom: 75px;
+  }
   .about .text-content {
     width: 80%;
     margin-left: 0;
     margin-top: 60px;
   }
+  .skills {
+    padding: 75px 0 75px 0;
+  }
+  .skills h2 {
+    margin-bottom: 75px;
+  }
   .skills ul {
     width: 100%;
+  }
+  .projects h2 {
+    margin-bottom: 90px;
   }
   .projects .container > li {
     -webkit-box-orient: vertical;
@@ -1162,7 +1177,7 @@ footer {
   }
   .projects .container .textContent {
     width: 50%;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
   }
   .projects .container .textContent:nth-of-type(odd) {
     margin-top: 60px;
@@ -1181,7 +1196,6 @@ footer {
   .contacts .textContent {
     margin-right: 0;
     width: 73%;
-    padding-bottom: 50px;
   }
   .contacts form {
     width: 80%;
@@ -1190,6 +1204,9 @@ footer {
 }
 
 @media (max-width: 560px) {
+  h1 {
+    font-size: 6vw;
+  }
   .mainNav.visible li {
     padding: 0;
   }
@@ -1210,6 +1227,10 @@ footer {
   .contacts form {
     width: 95%;
     margin-bottom: 40px;
+  }
+  .contacts p {
+    width: 70%;
+    margin: 75px auto 0 auto;
   }
 }
 

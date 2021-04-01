@@ -82,7 +82,7 @@
     .contacts .textContent {
         margin-right: 0;
         width: 58%;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     .contacts form {
@@ -92,14 +92,36 @@
 }
 
 @media (max-width: 1050px) {
+    .about {
+        padding-bottom: 75px;
+    }
+
+    .about h2 {
+        margin-bottom: 75px;
+    }
+
     .about .text-content {
         width: 80%;
         margin-left: 0;
         margin-top: 60px;
     }
 
-    .skills ul {
-       width: 100%;
+    .skills {
+        padding: 75px 0 75px 0;
+
+        h2 {
+            margin-bottom: 75px;
+        }
+
+        ul {
+           width: 100%;
+        }
+    }
+
+    .projects {
+        h2 {
+            margin-bottom: 90px;
+        }
     }
 
     .projects .container {
@@ -115,7 +137,7 @@
 
         .textContent {
             width: 50%;
-            margin: 60px 0 0 0;
+            margin: 50px 0 0 0;
         }
 
         .textContent:nth-of-type(odd) {
@@ -140,16 +162,19 @@
     .contacts .textContent {
         margin-right: 0;
         width: 73%;
-        padding-bottom: 50px;
     }
 
     .contacts form {
         width: 80%;
         margin-bottom: 40px;
     }
-}
+}   
 
 @media (max-width: 560px) {
+    h1 {
+        font-size: 6vw;
+    }
+
     .mainNav.visible {
         li {
             padding: 0;
@@ -179,6 +204,11 @@
     .contacts form {
         width: 95%;
         margin-bottom: 40px;
+    }
+
+    .contacts p {
+        width: 70%;
+        margin: 75px auto 0 auto;
     }
 }
 

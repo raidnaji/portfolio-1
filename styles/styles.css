@@ -1102,6 +1102,11 @@ footer {
   .mainNav.visible i {
     font-size: calc(0.8rem + 3.3vw);
   }
+  .mainNav.visible a:hover i,
+  .mainNav.visible a:focus i {
+    -webkit-transform: none;
+            transform: none;
+  }
   .contacts .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1177,6 +1182,12 @@ footer {
 }
 
 @media (max-width: 560px) {
+  .mainNav.visible li {
+    padding: 0;
+  }
+  .mainNav.visible a {
+    padding: 10px 0;
+  }
   .about .text-content {
     width: 100%;
   }

@@ -67,6 +67,11 @@
         i {
             font-size: calc(0.8rem + 3.3vw);
         }
+
+        a:hover i,
+        a:focus i {
+            transform: none;
+        }
     }
 
     .contacts .container {
@@ -145,9 +150,20 @@
 }
 
 @media (max-width: 560px) {
+    .mainNav.visible {
+        li {
+            padding: 0;
+        }
+
+        a {
+            padding: 10px 0;
+        }
+    }
+
     .about .text-content{
         width: 100%;
     }
+
     .projects .container {
         .textContent {
             width: 80%;

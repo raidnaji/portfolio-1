@@ -433,6 +433,10 @@ h3 {
   margin: 0 auto;
 }
 
+.externalContainer {
+  background-color: #0a0a0a;
+}
+
 a {
   text-decoration: none;
 }

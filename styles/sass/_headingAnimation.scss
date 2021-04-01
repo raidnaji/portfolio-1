@@ -28,7 +28,7 @@
 .text3::after {
     content: '_';
     position: absolute;
-    right: -5px;
+    right: -10px;
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(1, end);

@@ -40,15 +40,27 @@ footer {
         width: 100%; 
     }
 
+    .resume {
+        font-weight: 700;
+        color: $secondary;
+        text-decoration: underline;
+    }
+
+    .resume,
+    i {
+        transition: all 0.2s;
+    }
+
     a:hover i,
-    a:focus i {
+    a:focus i,
+    .resume:hover,
+    .resume:focus {
         color: $interactive;
     }
 
     i {
         color: $secondary;
         font-size: 3rem;
-        transition: all 0.2s;
     }
 }
 

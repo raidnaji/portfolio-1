@@ -903,16 +903,28 @@ footer {
   width: 100%;
 }
 
+.contacts .textContent .resume {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contacts .textContent .resume,
+.contacts .textContent i {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .contacts .textContent a:hover i,
-.contacts .textContent a:focus i {
+.contacts .textContent a:focus i,
+.contacts .textContent .resume:hover,
+.contacts .textContent .resume:focus {
   color: #ffa500;
 }
 
 .contacts .textContent i {
   color: #ffffff;
   font-size: 3rem;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 .contacts form {

@@ -5,14 +5,13 @@ const app = {};
 app.displayNav = () => {
     const navigationMenu = document.querySelector('.mainNav');
 
-        if (window.pageYOffset > window.innerHeight * 0.7) {
-            navigationMenu.classList.add('visible');
-            navigationMenu.classList.remove('hidden');
-            
-        } else {
-            navigationMenu.classList.add('hidden');
-            navigationMenu.classList.remove('visible');
-        }
+    if (window.pageYOffset > window.innerHeight * 0.7) {
+        navigationMenu.classList.add('visible');
+        navigationMenu.classList.remove('hidden');
+    } else {
+        navigationMenu.classList.add('hidden');
+        navigationMenu.classList.remove('visible');
+    }
 }
 
 // change the animation for elements of Projects section based on width of the user screen
@@ -54,8 +53,8 @@ app.changeAnimation = () => {
 
 // register event listeners
 app.appInit = () => {
-    window.addEventListener("scroll", app.displayNav);
-    window.addEventListener("DOMContentLoaded", app.changeAnimation);
+    window.addEventListener('scroll', app.displayNav);
+    window.addEventListener('DOMContentLoaded', app.changeAnimation);
 }
 
 // initialize AOS Library

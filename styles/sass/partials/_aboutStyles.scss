@@ -9,16 +9,16 @@
     flex-wrap: wrap;
 }
 
-.about .image-container {
+.about .imageContainer {
     width: 37%;
     float: left;
 }
 
-.image-container img {
+.imageContainer img {
     width: 100%;
 }
 
-.about .text-content {
+.about .textContent {
     width: 45%;
     margin-left: 40px;
     float: left;
@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-.text-content p:first-child,
-.text-content p:nth-child(2) {
+.textContent p:first-child,
+.textContent p:nth-child(2) {
     margin-bottom: 20px;
 }

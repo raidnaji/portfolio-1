@@ -4,15 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">  
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--Favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="./assests/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assests/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assests/favicons/favicon-16x16.png">
         <link rel="manifest" href="./assests/favicons/site.webmanifest">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">  
+        <!--AOS Library Styles-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--Website Styles-->
         <link rel="stylesheet" href="./styles/styles.css" />
+        <!--FontAwesome CDN-->
         <script src="https://kit.fontawesome.com/ea3b5e355b.js" crossorigin="anonymous"></script>
+        <!--Iconify CDN-->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <title>Portfolio - Anton Montrezor</title>
     </head>
@@ -68,17 +74,17 @@
                         <i class="far fa-caret-square-down" aria-hidden="true"></i>
                     </a>
                 </div>
-            </div>
+            </div><!--/.wrapper-->
         </header>
         <main>
             <section class="about" id="about">
                 <div class="wrapper">
                     <h2>About Me</h2>
                     <div class="container">
-                        <div class="image-container">
+                        <div class="imageContainer">
                             <img src="./assests/personalPhoto.jpeg" alt="A picture of me standing in front of a white wall in a black t-shirt with black-framed glasses">
                         </div>
-                        <div class="text-content">
+                        <div class="textContent">
                             <p>
                                 I am a Front-End Web Developer. I create responsive and accessible web applications and am focused on delivering modern solutions to complex web designs with up-to-date skills in HTML5, CSS3, JavaScript (ES6+), and other front-end tools.
                             </p>
@@ -88,10 +94,10 @@
                             <p>
                                 My technical abilities are backed up by my past IT experience in examining issues from multiple viewpoints and analyzing information to answer complex problems. I constantly develop my skills to offer the best technologies used in Web Development.   
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        </div><!--/.textContent-->
+                    </div><!--/.container-->
+                </div><!--/.wrapper-->
+            </section><!--/.about-->
             <div class="externalContainer">
                 <section class="skills" id="skills">
                     <div class="wrapper">
@@ -158,8 +164,8 @@
                                 <span>Code Refactoring</span>
                             </li>
                         </ul>
-                    </div>
-                </section>
+                    </div><!--/.wrapper-->
+                </section><!--/.skills-->
                 <section class="projects" id="projects">
                     <div class="wrapper">
                         <h2>Projects</h2>
@@ -185,7 +191,7 @@
                                             <span>|</span>
                                             <a href="https://github.com/teamAwesomenessest/haikusHighway" target="blank">GitHub</a>
                                     </div>
-                                </div>
+                                </div><!--/.textContent-->
                             </li>
                             <li>
                                 <div class="textContent"  data-aos="fade-right" id="soccerDescription">
@@ -203,7 +209,7 @@
                                             <span>|</span>
                                             <a href="https://github.com/antonmontrezor/AntonMontrezorProject3" target="blank">GitHub</a>
                                     </div>
-                                </div>
+                                </div><!--/.textContent-->
                                 <div class="imageContainer" data-aos="fade-left" id="soccerImage">
                                     <img src="./assests/footballApp.png" alt="An image of five rounded logos of the top European soccer leagues">
                                 </div>
@@ -229,12 +235,12 @@
                                             <span>|</span>
                                             <a href="https://github.com/Nihal-and-Anton/friendly-weather-app" target="blank">GitHub</a>
                                     </div>
-                                </div>
+                                </div><!--/.textContent-->
                             </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+                        </ul><!--/.container-->
+                    </div><!--/.wrapper-->
+                </section><!--/.projects-->
+            </div><!--/.externalContainer-->
         </main>
         <footer>
             <section class="contacts" id="contacts">
@@ -261,7 +267,7 @@
                                     <i class="fas fa-envelope" aria-hidden="true"></i>
                                 </a>  
                             </div>
-                        </div>
+                        </div><!--/.textContent-->
                         <form action="./successMessage.html" method="POST" name="contactMe" netlify>
                             <fieldset class="userInformation">
                                 <legend class="srOnly">Type your name and email to contact me</legend>
@@ -276,17 +282,18 @@
                             <textarea name="message" id="message" placeholder="Write your message..." required></textarea>
                             <button type="submit">Submit Message</button>
                         </form>
-                    </div>
-                </div>
+                    </div><!--/.container-->
+                </div><!--/.wrapper-->
                 <p>Designed and developed by Anton Montrezor © 2021</p>
-            </section>
+            </section><!--./contacts-->
         </footer>
-        <script src="./particles.js"></script>
+        <!--Particles.js Library CDN-->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <!--Particles.js Configuration-->
         <script src="./app.js"></script>
-        <script src="./scripts.js"></script>
+        <!--AOS Library CDN-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        <!--Website Scripts-->
+        <script src="./scripts.js"></script>
     </body>
 </html>

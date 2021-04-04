@@ -1,5 +1,7 @@
+//A namespace object
 const app = {};
 
+// display navigation bar once a user scrolls down over 70% of their screen's height
 app.displayNav = () => {
     const navigationMenu = document.querySelector('.mainNav');
 
@@ -13,15 +15,13 @@ app.displayNav = () => {
         }
 }
 
+// change the animation for elements of Projects section based on width of the user screen
 app.changeAnimation = () => {
     const elementsAnimatedLeft = document.querySelectorAll('[data-aos="fade-left"]');
     const elementsAnimatedRight = document.querySelectorAll('[data-aos="fade-right"]');
-    // const soccerImage = document.querySelector('#soccerImage');
-    // const 
     
     for (let element of elementsAnimatedLeft) {
         if (window.innerWidth < 1000) {
-            console.log(element.classList[0] !== 'imageContainer')
             if (element.classList[0] !== 'imageContainer') {
                 element.removeAttribute('data-aos');
                 element.setAttribute('data-aos', 'fade-up');
@@ -37,7 +37,6 @@ app.changeAnimation = () => {
 
     for (let element of elementsAnimatedRight) {
         if (window.innerWidth < 1000) {
-            console.log(element.classList[0] !== 'textContent')
             if (element.classList[0] !== 'textContent') {
                 element.removeAttribute('data-aos');
                 element.setAttribute('data-aos', 'fade-down'); 
@@ -53,9 +52,13 @@ app.changeAnimation = () => {
     } 
 }
 
+// register event listeners
 app.appInit = () => {
     window.addEventListener("scroll", app.displayNav);
     window.addEventListener("DOMContentLoaded", app.changeAnimation);
 }
 
+// initialize AOS Library
+AOS.init();
+// initialize application
 app.appInit();

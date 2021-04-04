@@ -1,22 +1,28 @@
 body.submissionCompleted {
-    width: 100vw;
-    height: 100vh;
-    background-color: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $primary;
+
     z-index: 0;
 
     .submissionMessage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         width: 400px;
         height: 150px;
         margin: 0;
         padding: 20px;
         border-radius: 20px;
+
         background-color: $secondary;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
         z-index: 1;
         
         h1 {

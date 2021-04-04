@@ -6,9 +6,9 @@
 }
 
 .projects .container {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     margin: 0 auto;
 
     >li {
@@ -19,41 +19,36 @@
     }
 }
 
+.projects img { 
+    width: 420px; 
+    height: 300px;
+    border-radius: 17px;
+    object-fit: cover;
 
-
-.projects img {
-        border-radius: 20px; 
-        border-radius: 17px;
-        object-fit: cover;
-        width: 420px; 
-        height: 300px;
-        // width: 28vw;
-        // height: 20vw;
-        transition: all 0.2s;
-    }
+    transition: all 0.2s;
+}
 
 .projects img:hover {
-        transform: scale(1.1);
-    }
+    transform: scale(1.1);
+}
 
 .projects .textContent {
+    position: relative;
     width: 50%;
     margin-left: 80px;
-    text-align: left;
-    position: relative;
     padding-bottom: 15px;
+    text-align: left;
 
     h3 {
-        font-size: 2.7rem;
-        margin-bottom: 10px;
         display: inline-block;
+        margin-bottom: 10px;
+        font-size: 2.7rem;
         text-transform: uppercase;
     }
 
     p {
-        text-align: justify;
         margin-bottom: 20px;
-        width: 100%;
+        text-align: justify;
     }
 
     .technologies {
@@ -71,14 +66,15 @@
 }
 
 .secondaryNav {
-    display: flex;
     position: absolute;
     bottom: 5px;
+    display: flex;
 
     a {
-        color: $secondary;
         font-weight: 700;
         text-transform: uppercase;
+        color: $secondary;
+
         transition: all 0.2s;
     }
 

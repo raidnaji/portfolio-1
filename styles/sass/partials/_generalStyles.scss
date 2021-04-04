@@ -1,6 +1,10 @@
 html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+html, 
+body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -8,33 +12,35 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     font-size: calc(1.6rem + 0.2vw);
-    width: 100%;
-    overflow-x: hidden;
 }
 
 main {
     margin-left: 8%;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Mono', monospace;
+}
+
 h1 {
     color: white;
     font-size: calc(2.75rem + 1.5vw);
-    font-family: 'Roboto Mono', monospace;
     font-weight: 600;
 }
 
 h2 {
-    font-size: calc(2.9rem + 0.7vw);
-    font-family: 'Roboto Mono', monospace;
-    margin-bottom: 90px;
     display: inline-block;
+    margin-bottom: 90px;
     padding: 0 5px;
     border-bottom: 4px solid orange;
+    
+    font-size: calc(2.9rem + 0.7vw);
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Roboto Mono', monospace;
     font-weight: 700;
 }
 
@@ -57,7 +63,6 @@ a:focus {
     outline: none;
 }
 
-
 ul {
     list-style: none;
 }
@@ -65,8 +70,3 @@ ul {
 p {
     line-height: 1.5;
 }
-
-// img {
-//     width: 100%;
-//     display: block;
-// }

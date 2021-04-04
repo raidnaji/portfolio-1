@@ -16,30 +16,28 @@ footer {
 }
 
 .contacts .container {
-    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    width: 100%;
 }
 
 .contacts .textContent {
-    width: 36%;
-    margin-right: 90px;
+    position: relative;
+    
     display: flex;
     flex-wrap: wrap;
-    text-align: justify;
-    position: relative;
 
-    p {
-        width: 100%;
-    }
+    width: 36%;
+    margin-right: 90px;
+    text-align: justify;
 
     .socialMedia {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
         position: absolute;
         bottom: 5px;
+
+        display: flex;
+        justify-content: space-around;
+        width: 100%; 
     }
 
     a:hover i,
@@ -59,21 +57,16 @@ footer {
     border-radius: 20px;
 
     fieldset {
-        border: none;
-        margin: 0;
-        padding: 0;
         display: flex;
         justify-content: center;
+
+        margin: 0;
+        padding: 0;
+        border: none;
     }
 
     input {
-        padding: 10px 10px;
         width: calc(45% - 2.5px);
-        border-radius: 5px;
-        font-size: 1.8rem;
-        border: none;
-        overflow: hidden;
-        transition: all 0.2s;
     }
 
     input:first-of-type {
@@ -81,24 +74,38 @@ footer {
     }
 
     textarea {
-        margin-top: 5px;
         height: 150px;
-        padding: 10px 10px;
-        width: 90%;
-        border-radius: 5px;
+        margin-top: 5px;
+        
         resize: none;
-        border: none;
-        font-size: 1.8rem;
+    }
+
+    input,
+    textarea {
+        padding: 10px 10px;
         overflow: hidden;
+
+        font-size: 1.8rem;
+
         transition: all 0.2s;
+    }
+
+    input, 
+    textarea,
+    button {
+        border-radius: 5px;
+        border: none;
+    }
+
+    textarea,
+    button {
+        width: 90%;
     }
 
     button {
         margin: 5px 0;
-        width: 90%;
         padding: 10px 0;
-        border-radius: 5px;
-        border: none;
+        
         background-color: $secondary;
         transition: all 0.3s;
     }

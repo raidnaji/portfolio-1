@@ -14,10 +14,11 @@
 .text1,
 .text2,
 .text3 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+
     animation-duration: 6.5s;
     animation-timing-function: steps(58, end);
     animation-iteration-count: infinite;
@@ -29,6 +30,7 @@
     content: '_';
     position: absolute;
     right: 0;
+
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
@@ -86,6 +88,6 @@
     60%,
     70%,
     95% {
-        color: white;
+        color: $secondary;
     }
 }

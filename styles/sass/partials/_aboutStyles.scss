@@ -28,6 +28,7 @@
 }
 
 .textContent p:first-child,
-.textContent p:nth-child(2) {
+.textContent p:nth-child(2),
+.textContent p:nth-child(3) {
     margin-bottom: 20px;
 }
